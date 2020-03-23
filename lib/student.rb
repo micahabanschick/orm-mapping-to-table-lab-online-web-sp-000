@@ -50,6 +50,6 @@ class Student
     new_student_instance = self.new(name, grade)
     new_student_instance.save
   end 
-  binding.pry 
+  #binding.pry 
   
 end
