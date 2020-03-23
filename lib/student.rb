@@ -16,7 +16,8 @@ class Student
   #binding.pry 
   
   def id
-    @id ||= Student.all.length
+    current_id = DB[:conn].execute("SELECT id FROM students DESC LIMIT 1") + 1 
+    @id ||= current_id
   end 
   
   def self.all 
