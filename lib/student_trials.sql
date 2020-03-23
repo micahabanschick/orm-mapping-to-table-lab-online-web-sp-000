@@ -1,4 +1,4 @@
--- sqlite3 db/students.db < student_trials.sql
+-- sqlite3 db/students.db < lib/student_trials.sql
 
 .headers on 
 .mode column
