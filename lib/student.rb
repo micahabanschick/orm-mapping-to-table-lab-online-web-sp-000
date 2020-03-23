@@ -47,8 +47,9 @@ class Student
   
   def self.create(name: name, grade: grade) 
     Student.create_table
-    return new_student_instance = self.new(name, grade)
+    new_student_instance = self.new(name, grade)
     new_student_instance.save
+    new_student_instance
   end 
   #binding.pry 
   
