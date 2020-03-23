@@ -15,7 +15,7 @@ class Student
   end
   
   def id
-    current_id = DB[:conn].execute("SELECT id FROM students DESC LIMIT 1")[0][0] + 1 
+    current_id = DB[:conn].execute("SELECT id FROM students DESC LIMIT 1")[0][0]
     current_id != nil ? @id ||= current_id : @id ||= 1 
   end 
   
