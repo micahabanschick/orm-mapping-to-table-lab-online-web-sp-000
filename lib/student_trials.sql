@@ -16,4 +16,8 @@ INSERT INTO students (id, name, grade) VALUES (3, "B", "11th");
 SELECT * FROM students;
 SELECT id FROM students DESC LIMIT 1;   
 
+
+
+
+
 DROP TABLE IF EXISTS students;
