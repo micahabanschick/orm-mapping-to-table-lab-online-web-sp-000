@@ -46,6 +46,7 @@ class Student
   end 
   
   def self.create(name: name, grade: grade) 
+    Student.create_table
     new_student_instance = self.new(name, grade)
     new_student_instance.save
   end 
