@@ -13,4 +13,5 @@ CREATE TABLE IF NOT EXISTS students (
 
 INSERT INTO students (id, name, grade) VALUES (1, "M", "9th");
 
+SELECT * FROM students;
 SELECT id FROM students DESC LIMIT 1;      
