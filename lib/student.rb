@@ -13,7 +13,6 @@ class Student
     @grade = grade 
     @@all << self 
   end
-  binding.pry 
   
   def id
     current_id = DB[:conn].execute("SELECT id FROM students DESC LIMIT 1")[0] + 1 
@@ -51,5 +50,6 @@ class Student
     new_student_instance = self.new(name, grade)
     new_student_instance.save
   end 
+  binding.pry 
   
 end
