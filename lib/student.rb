@@ -40,9 +40,9 @@ class Student
   
   def save 
     # Student.create_table 
-    new_student_row = 
+    current_student_row = 
       "INSERT INTO students (id, name, grade) VALUES (?, ?, ?)"
-    DB[:conn].execute(new_student_row, self.id, self.name, self.grade)
+    DB[:conn].execute(current_student_row, self.id, self.name, self.grade)
   end 
   
   def self.create(name: name, grade: grade) 
