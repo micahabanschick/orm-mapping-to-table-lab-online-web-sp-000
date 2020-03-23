@@ -11,11 +11,14 @@ class Student
   def initialize(name, grade)
     @name = name 
     @grade = grade 
-    
     @@all << self 
-    @id = Student.all.length - 4
   end
   #binding.pry 
+  
+  def id
+    @id ||= Student.all.length
+  end 
+  
   def self.all 
     @@all 
   end 
