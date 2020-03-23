@@ -4,8 +4,6 @@
 .mode column
 .width auto 
 
-DROP TABLE IF EXISTS students;
-
 CREATE TABLE IF NOT EXISTS students (
       id INTEGER PRIMARY KEY,
       name TEXT,
@@ -16,4 +14,6 @@ INSERT INTO students (id, name, grade) VALUES (2, "l", "10th");
 INSERT INTO students (id, name, grade) VALUES (3, "B", "11th");
 
 SELECT * FROM students;
-SELECT id FROM students DESC LIMIT 1;      
+SELECT id FROM students DESC LIMIT 1;   
+
+DROP TABLE IF EXISTS students;
