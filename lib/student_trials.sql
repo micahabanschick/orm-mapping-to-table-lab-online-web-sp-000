@@ -1,4 +1,4 @@
--- sqlite3 
+-- sqlite3 db/students.db <
 
 .headers on 
 .mode column
