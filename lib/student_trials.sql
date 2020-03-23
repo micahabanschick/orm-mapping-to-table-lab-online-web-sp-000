@@ -10,4 +10,5 @@ CREATE TABLE IF NOT EXISTS students (
       id INTEGER PRIMARY KEY,
       name TEXT,
       grade TEXT);
-      
+
+SELECT id FROM students DESC LIMIT 1      
