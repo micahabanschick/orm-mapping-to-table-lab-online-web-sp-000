@@ -11,6 +11,6 @@ CREATE TABLE IF NOT EXISTS students (
       name TEXT,
       grade TEXT);
 
-INSERT INTO students (id, name, grade) VALUES (1, "M", "9th")
+INSERT INTO students (id, name, grade) VALUES (1, "M", "9th");
 
-SELECT id FROM students DESC LIMIT 1      
+SELECT id FROM students DESC LIMIT 1;      
